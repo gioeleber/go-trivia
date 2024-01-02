@@ -1,0 +1,15 @@
+<ul>
+  {{ if .Facts}}
+    {{ range .Facts}}
+    <li class="px-6 py-4 border rounded-xl">
+      <p><b>Question:</b> {{ .Question }}</p>
+      <p><b>Answer:</b> {{ .Answer }}</p>
+    </li>
+    {{ end }}
+  {{ else }}
+    <div>
+      <p>There is no Fact.</p>
+      <a href="/fact">add new</a>
+    </div>
+  {{ end }}
+</ul>
