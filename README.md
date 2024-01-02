@@ -8,4 +8,4 @@ mv tailwindcss-macos-arm64 tailwindcss
 ```
 
 # start tailwind cli watch sessions
-`./tailwindcss -i public/css/main.css -o public/css/output.css --watch``
+```./tailwindcss -i public/css/main.css -o public/css/output.css --watch```
