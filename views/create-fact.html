@@ -1,4 +1,10 @@
-<form action="/form" class="flex flex-col gap-y-4">
+
+<form
+  class="flex flex-col gap-y-4"
+  hx-post="/fact"
+  hx-trigger="submit"
+  hx-swap="outerHTML"
+>
   <label for="question" class="flex flex-col gap-y-1">
     <span class="font-bold">Question</span>
     <input class="px-3 py-2 border rounded-lg max-w-xl" name="question" id="question" placeholder="How is it today?" type="text">

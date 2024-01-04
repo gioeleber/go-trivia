@@ -1,7 +1,11 @@
-<ul>
+<ul class="flex flex-col gap-y-4">
   {{ if .Facts}}
     {{ range .Facts}}
-    <li class="px-6 py-4 border rounded-xl">
+    <li class="px-6 py-4 border rounded-xl relative">
+      <form>
+        <input class="hidden" type="text" name="id" value="{{ .ID}}">
+        <button class="absolute top-3 right-3">✖</button>
+      </form>
       <p><b>Question:</b> {{ .Question }}</p>
       <p><b>Answer:</b> {{ .Answer }}</p>
     </li>
